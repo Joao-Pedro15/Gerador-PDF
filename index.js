@@ -160,6 +160,11 @@ h2{
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
 p{
     font-size: 14px;
     margin-bottom: 7px;
@@ -184,7 +189,7 @@ a{
 <body>
 <div class="title">
     <h1>João Pedro Correa Monteiro</h1>
-    <p>Portifólio: <a href="joaopedro15.000webhostapp.com">joaopedro15.000webhostapp.com</a></p>
+    <p>Portifólio: <a href="https://joao-pedro15.github.io/Portifolio">https://joao-pedro15.github.io/Portifolio/</a></p>
     <p>Linkedin: <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-monteiro-2083a6203/">Joao Pedro</a></p>
     <p>GitHub: <a href="https://github.com/joao-pedro15">Joao-Pedro15</a></p>
     <p>Email: <a href="mailto:jjoao.monteiro15@gmail.com">jjoao.monteiro15@gmail.com</a></p>
@@ -192,59 +197,33 @@ a{
 </div>
 
 <div>
-    <h2>Objetivo profissional:</h2>
-    <p>Estou em busca de uma vaga como Desenvolvedor web backend junior. Atualmente trabalho com NodeJs, ExpressJs, Javascript, Html5, Css3, Bootstrap e banco de dados MongoDB e firebase, tenho conhecimentos em Reactjs e estou disposto a aprender com desenvolvedores mais experientes para me tornar um programador melhor a cada dia!.</p>
-</div>
-
-<div>
-    <h2>Habilidades:</h2>
-    <p>Linguagem de programação NodeJs</p>
-    <p>Desenvolvimento de servidor com framework ExpressJs</p>
-    <p>Desenvolvimento de APIs Rest</p>
-    <p>Consumo de API externa</p>
-    <p>Operações com banco de dados MongoDB (mongoose) e Firebase</p>
-    <p>Autenticação e sessões com JWT (jsonwebtoken) e Passport</p>
-    <p>Linguagens básicas do desenvolvimento web: HTML5, CSS3, Javascript</p>
-    <p>Template engine EJS e Handlebars para paginas dinamicas</p>
-    <p>Desenvolvimento de aplicações na arquitetura MVC (model-view-controller)</p>
-    <p>Utilização de tecnologias de versionamento como Git e Github</p>
-</div>
-
-<div>
-<h2>Diferenciais:</h2>
-<p>Desenvolvimento de interface no framework ReactJs</p>
-<p>Conhecimentos básicos da biblioteca socket.io</p>
-</div>
-
-<div>
-    <h2>Escolaridade:</h2>
-    <p>Ensino Técnico completo - Informática</p>
-    <p>ETEC Camargo Aranha - São Paulo, SP</p>
-    <p>Janeiro de 2018 a Novembro de 2020</p>
-</div>
-
-<div class="last">
-    <h2>Certificados:</h2>
+        <h2>Experiência profissional:</h2>
+        <h3>Desenvolvedor Back-end JR - Vereda Educação</h3>
+        <p>Responsável por criar e dar manutenção a um sistema ERP.
+            Responsável por implementação <br> de testes automatizados (unitários, integração e E2E) com framework Jest, além de implementação <br> de design pattern factory e princípios do SOLID.
+        </p>
+    </div>
     
     <div>
-    <p>Desenvolvimento Web Full Stack - NodeJs e MongoDB</p>
-    <p>Novembro 2021</p>
-    <p>Número do Certificado: DVWBJPCM26NO412114</p>
-    <p>Consultar validade em: programadorbr.com/autenticidade</p>
+        <h2>Habilidades:</h2>
+        <p>Linguagem de programação NodeJs</p>
+        <p>Desenvolvimento de servidor com framework ExpressJs</p>
+        <p>Desenvolvimento de API com typescript</p>
+        <p>Design patterns como Factory e Adapter<p>
+        <p>Implementação de testes automatizados dom Jest</p>
+        <p>Operações com banco de dados SQL (SqlServer)</p>
+        <p>Operações com banco de dados MongoDB (mongoose) e Firebase</p>
+        <p>Experiência com ORMs (prismajs e sequelize)<p>
+        <p>Familiaridade com plataforma Microsoft Azure</p>
+        <p>Autenticação e sessões com JWT (jsonwebtoken) e Passport</p>
+        <p>Utilização de tecnologias de versionamento como Git e Github</p>
     </div>
-
+    
     <div>
-    <p>Desenvolvimento Web Full Stack - Firebase, jQuery e Bootstrap</p>
-    <p>Julho de 2021</p>
-    <p>Número do Certificado: DVWBJPCM26FI412114</p> 
-    <p>Consultar validade em: programadorbr.com/autenticidade</p>
-    </div>
-
-    <div>
-    <p>Desenvolvimento Web Full Stack - HTML, CSS E Javascript</p>
-    <p>Março de 2021</p>
-    <p>Número do Certificado: DVWBJPCM26HT412114</p> 
-    <p>Consultar validade em: programadorbr.com/autenticidade</p>
+        <h2>Escolaridade:</h2>
+        <p>Ensino Técnico completo - Informática</p>
+        <p>ETEC Camargo Aranha - São Paulo, SP</p>
+        <p>Janeiro de 2018 a Novembro de 2020</p>
     </div>
 </body>
 `
@@ -373,7 +352,7 @@ a{
 `
 
 
-pdf.create(fullstack, {}).toFile('./full/curriculo.pdf', (err, res)=>{
+pdf.create(backend, {}).toFile('./back/curriculo.pdf', (err, res)=>{
     if(err){
         console.log(err)
     }else{
